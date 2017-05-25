@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>todo List</ion-title>
+  <ion-navbar>
+<ion-buttons end>
+<button (click)="add()"><ion-icon name="add"></ion-icon></button>
+</ion-buttons>
+</ion-navbar>
+</ion-header>
+<ion-contend class="todos">
+<ion-list>
+<ion-item-sliding *ngFor="let todo of todolist; let i=index">
+<ion-item>
+<h2>{{todo}}</h2>
+</ion-item>
+<ion-item-options>
+<button danger (click)="delete(i)">
+<ion-icon name = "trash"></ion-icon>
+</button>
+</ion-item-options>
+<ion-list>
+
+
+ 

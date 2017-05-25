@@ -1,0 +1,22 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Añadir</ion-title>
+    <ion-buttons>
+   <button (click)="save()"><ion-icon name="checkmak"></ion-icon></button>
+    </ion-buttons>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+<ion-item>
+<ion-label floating>Todo item</ion-label>
+<ion-input type="text"[(ngModel)]="TodoItem"></ion-input>
+</ion-item>
+</ion-list>
+</ion-content>
